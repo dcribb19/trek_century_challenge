@@ -12,7 +12,9 @@ There were 3 things that I wanted to create:
 After creating these, I wanted to consolidate them into one report that I can generate.....
 
 ## Examples
+![Bar_7_13](https://github.com/dcribb19/trek_century_challenge/blob/master/graphs/bar_stats.jpg '7_13') ![Line_7_13](https://github.com/dcribb19/trek_century_challenge/blob/master/graphs/pace_stats.jpg '7_13')  
 
+![Bar_7_18](https://github.com/dcribb19/trek_century_challenge/blob/master/graphs/bar_stats_07_18.jpg) ![Line_7_18](https://github.com/dcribb19/trek_century_challenge/blob/master/graphs/pace_stats_07_18.jpg)  
 INSERT TEXT AND GRAPH PHOTOS
 
 ## Technology  
