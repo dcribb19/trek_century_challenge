@@ -12,7 +12,7 @@ There were 3 things that I wanted to create:
 I used matplotlib to create the bar chart and line graph. After creating these, I wanted to consolidate them into one report that can be generated after each ride to check where I stand. I figured that a .pdf would be an ideal document for this and discovered the reportlab package which allows for the creation of .pdfs.
 
 ## Examples
-![example](https://github.com/dcribb19/trek_century_challenge/blob/master/reports/example.png)
+![example](https://github.com/dcribb19/trek_century_challenge/blob/master/reports/daily_report_07_18.pdf)
 
 ## Technology  
 - Python 3.8
