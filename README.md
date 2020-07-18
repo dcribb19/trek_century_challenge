@@ -9,13 +9,10 @@ There were 3 things that I wanted to create:
 2. Line graph to visualize total miles vs. a linear pace to hit 1,000 miles over 31 days  
 3. A text representation of my current progress
 
-After creating these, I wanted to consolidate them into one report that I can generate.....
+After creating these, I wanted to consolidate them into one report that can be generated after each ride to check where I stand.
 
 ## Examples
-![Bar_7_13](https://github.com/dcribb19/trek_century_challenge/blob/master/graphs/bar_stats.jpg '7_13') ![Line_7_13](https://github.com/dcribb19/trek_century_challenge/blob/master/graphs/pace_stats.jpg '7_13')  
-
-![Bar_7_18](https://github.com/dcribb19/trek_century_challenge/blob/master/graphs/bar_stats_07_18.jpg) ![Line_7_18](https://github.com/dcribb19/trek_century_challenge/blob/master/graphs/pace_stats_07_18.jpg)  
-INSERT TEXT AND GRAPH PHOTOS
+![example](https://github.com/dcribb19/trek_century_challenge/blob/master/reports/example.png)
 
 ## Technology  
 - Python 3.8
@@ -34,7 +31,7 @@ INSERT TEXT AND GRAPH PHOTOS
 2. Run daily_report.py
     - Output (All files saved as _month_day.extension)
         - Bar chart and line graph saved as .jpg to graphs directory
-        - .pdf saved to reports directory  
+        - .pdf saved to reports directory
 
 
 ## License
