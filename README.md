@@ -34,12 +34,15 @@ python daily_report.py
     <img src='https://github.com/dcribb19/trek_century_challenge/blob/master/examples/gui.png'>
 </p>
 
-- ... button will bring up calendar in order to select date.  
+1. ... button will bring up calendar in order to select date.  
 <p align='center'>
     <img src='https://github.com/dcribb19/trek_century_challenge/blob/master/examples/calendar.png'>
 </p>  
-- Then, enter miles, select location, and submit.  
-- Output (All files saved with _month_day.extension)  
+
+2. Enter miles  
+3. Select location
+4. Submit 
+#### Output (All files saved with _month_day.extension)  
     - Bar chart saved as .jpg to graphs directory
     - Line graph saved as .jpg to graphs directory
     - Report .pdf saved to reports directory
