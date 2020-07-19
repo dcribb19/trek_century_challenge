@@ -11,7 +11,7 @@ There were 3 things that I wanted to create:
 
 I used matplotlib to create the bar chart and line graph. After creating them, I wanted to consolidate them with some text into one report that can be generated after each ride to check where I stand. After listening to episode 17 of The Real Python Podcast, I learned about the reportlab package, which can be used to create .pdfs, and figured that a .pdf would be an ideal document type for this.
 
-Then, I heard episode 13 of The Real Python Podcast, which introduced me to PySimpleGUI. 
+Then, I heard episode 13 of The Real Python Podcast, which introduced me to PySimpleGUI, which I thought could be a nice way to enter and save ride data. So, I created a GUI that allows me to enter ride info, and upon clicking 'Submit', generates a new report.
 
 ## Examples
 <p align='center'>
@@ -38,7 +38,7 @@ python daily_report.py
 
 2. ... button will bring up calendar in order to select date.  
 <p align='center'>
-    <img src='https://recordit.co/ayefSx6HqT'>
+    <img src='https://github.com/dcribb19/trek_century_challenge/blob/master/examples/calendar.gif'>
 </p>  
 
 3. Enter miles  
