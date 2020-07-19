@@ -12,7 +12,9 @@ There were 3 things that I wanted to create:
 I used matplotlib to create the bar chart and line graph. After creating these, I wanted to consolidate them into one report that can be generated after each ride to check where I stand. I figured that a .pdf would be an ideal document for this and discovered the reportlab package which allows for the creation of .pdfs.
 
 ## Examples
-![report](https://github.com/dcribb19/trek_century_challenge/blob/master/examples/report.png)
+<p align='center'>
+    <img src='https://github.com/dcribb19/trek_century_challenge/blob/master/examples/report.png'>
+</p>
 
 ## Technology  
 - Python 3.8
@@ -27,11 +29,16 @@ I used matplotlib to create the bar chart and line graph. After creating these, 
 ```python
 python daily_report.py
 ```
-GUI will display.  
-![gui](https://github.com/dcribb19/trek_century_challenge/blob/master/examples/gui.png)  
-... button will bring up calendar in order to select date.  
-![calendar](https://github.com/dcribb19/trek_century_challenge/blob/master/examples/calendar.png)  
-Then, enter miles, select location, and submit.  
+- GUI will display.  
+<p align='center'>
+    <img src='https://github.com/dcribb19/trek_century_challenge/blob/master/examples/gui.png'>
+</p>
+
+- ... button will bring up calendar in order to select date.  
+<p align='center'>
+    <img src='https://github.com/dcribb19/trek_century_challenge/blob/master/examples/calendar.png'>
+</p>  
+- Then, enter miles, select location, and submit.  
 - Output (All files saved with _month_day.extension)  
     - Bar chart saved as .jpg to graphs directory
     - Line graph saved as .jpg to graphs directory
