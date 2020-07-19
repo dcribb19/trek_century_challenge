@@ -1,7 +1,8 @@
 # july_mileage.py
 # Visualize cycling stats for July 2020 Trek Century Challenge on Strava.
 
-from datetime import date, timedelta
+import csv
+from datetime import date, datetime, timedelta
 from matplotlib import pyplot as plt
 import numpy as np
 import os.path
@@ -16,30 +17,18 @@ DAILY_GOAL = round(GOAL / 31, 1)
 july_dates = [date(2020, 7, x) for x in range(1, 32)]
 pace = [round(DAILY_GOAL * x, 1) for x in range(1, 32)]
 
-outside = {
-    date(2020, 7, 1): 25.6,
-    date(2020, 7, 3): 78.3,
-    date(2020, 7, 4): 35.4,
-}
-
-zwift = {
-    date(2020, 7, 2): 12.2,
-    date(2020, 7, 4): 18.7,
-    date(2020, 7, 5): 64.5,
-    date(2020, 7, 6): 10,
-    date(2020, 7, 7): 31.8,
-    date(2020, 7, 8): 31.2,
-    date(2020, 7, 9): 31.1,
-    date(2020, 7, 10): 10.0,
-    date(2020, 7, 11): 43.6,
-    date(2020, 7, 12): 63.6,
-    date(2020, 7, 13): 9.5,
-    date(2020, 7, 14): 32.4,
-    date(2020, 7, 15): 31.8,
-    date(2020, 7, 16): 20.6,
-    date(2020, 7, 17): 12.5,
-    date(2020, 7, 18): 63.5,
-}
+outside = {}
+zwift = {}
+with open('rides.csv', 'r', newline='') as csvfile:
+    ride_reader = csv.reader(csvfile)
+    for row in ride_reader:
+        date_csv = datetime.strptime(row[0], '%Y-%m-%d').date()
+        miles = float(row[1])
+        location = row[2]
+        if location == 'outside':
+            outside[date_csv] = miles
+        else:
+            zwift[date_csv] = miles
 
 
 def format_dates(dates: list) -> list:
@@ -87,7 +76,7 @@ def bar_stats():
     plt.title('Daily Miles Ridden - July 2020')
     # plt.xlabel('Date')
     plt.xticks(rotation=45)
-    plt.xticks(np.arange(0, len(dates), 3))
+    plt.xticks(np.arange(0, len(dates), 4))
     plt.ylabel('Miles')
     plt.yticks(np.arange(0, 91, 10))
     plt.legend()
