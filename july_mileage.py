@@ -76,7 +76,14 @@ def bar_stats():
     plt.title('Daily Miles Ridden - July 2020')
     # plt.xlabel('Date')
     plt.xticks(rotation=45)
-    plt.xticks(np.arange(0, len(dates), 4))
+    x_step = 0
+    if len(dates) <= 20:
+        x_step = 4
+    elif len(dates) > 20 and len(dates) < 26:
+        x_step = 5
+    else:
+        x_step = 7
+    plt.xticks(np.arange(0, len(dates), x_step))
     plt.ylabel('Miles')
     plt.yticks(np.arange(0, 91, 10))
     plt.legend()
@@ -149,8 +156,10 @@ def current_stats() -> str:
                           + str(remaining) + ' miles remaining. ('
                           + str(round(remaining / days_left.days, 1))
                           + ' mi/day)\n')
-
-    if miles_ridden > pace:
+    if miles_ridden > GOAL:
+        current_stats += 'Challenge Completed! ' + str(miles_ridden)
+        current_stats += ' miles ridden.'
+    elif miles_ridden > pace:
         current_stats += str(round(miles_ridden - pace, 1))
         current_stats += ' miles ahead of schedule.'
     else:
