@@ -38,7 +38,7 @@ python daily_report.py
 
 2. ... button will bring up calendar in order to select date.  
 <p align='center'>
-    <img src='https://github.com/dcribb19/trek_century_challenge/blob/master/examples/calendar.gif'>
+    <img width=400 height=172 src='https://github.com/dcribb19/trek_century_challenge/blob/master/examples/calendar.gif'>
 </p>  
 
 3. Enter miles  
