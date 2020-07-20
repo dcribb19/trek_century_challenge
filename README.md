@@ -27,14 +27,12 @@ Zwift even hosted the Official Virtual Tour de France 2020!
     <img src=https://github.com/dcribb19/trek_century_challenge/blob/master/examples/zwift_ex.jpg width=400 height=221> <img src=https://github.com/dcribb19/trek_century_challenge/blob/master/examples/zwift_ex3.jpg width=400 height=221>
 </p>
 
-## Technology  
+## Technologies
 - Python 3.8
-
-## Requirements
-- [matplotlib](https://matplotlib.org/)
-- [numpy](https://numpy.org/)
-- [PySimpleGUI](https://pysimplegui.readthedocs.io/en/latest/)
-- [reportlab](https://www.reportlab.com/dev/opensource/)
+- matplotlib 3.3.0
+- numpy 1.19.0
+- PySimpleGUI 4.26.0
+- reportlab 3.5.36
 
 ## Usage
 ```python
