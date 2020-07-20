@@ -23,7 +23,7 @@ You may have noticed in the bar chart that most of my rides have taken place on 
 
 Zwift even hosted the Official Virtual Tour de France 2020!
 
-<img src=https://github.com/dcribb19/trek_century_challenge/blob/master/examples/zwift_ex.jpg width=270 height=138> <img src=https://github.com/dcribb19/trek_century_challenge/blob/master/examples/zwift_ex3.jpg width=270 height=138>
+<img src=https://github.com/dcribb19/trek_century_challenge/blob/master/examples/zwift_ex.jpg width=400 height=212> <img src=https://github.com/dcribb19/trek_century_challenge/blob/master/examples/zwift_ex3.jpg width=400 height=212>
 
 ## Technology  
 - Python 3.8
