@@ -15,7 +15,7 @@ Then, I heard episode 13 of The Real Python Podcast, which introduced me to PySi
 
 ## Examples
 <p align='center'>
-    <img width=500 height=649 src='https://github.com/dcribb19/trek_century_challenge/blob/master/examples/report.png'>
+    <img width=600 height=779 src='https://github.com/dcribb19/trek_century_challenge/blob/master/examples/report.png'>
 </p>
 
 ## Technology  
@@ -33,7 +33,7 @@ python daily_report.py
 ```
 1. GUI will display.  
 <p align='center'>
-    <img src='https://github.com/dcribb19/trek_century_challenge/blob/master/examples/gui.png'>
+    <img width=400 height=147 src='https://github.com/dcribb19/trek_century_challenge/blob/master/examples/gui.png'>
 </p>
 
 2. ... button will bring up calendar in order to select date.  
