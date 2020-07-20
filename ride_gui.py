@@ -18,7 +18,7 @@ def show_gui():
         [sg.Text('Miles'), sg.Input(key='Miles')],
         [sg.Radio('Outside', 'Radio1', key='Outside'),
          sg.Radio('Zwift', 'Radio1', default=True, key='Zwift')],
-        [sg.Button('Submit'), sg.Button('Cancel')]
+        [sg.Button('Submit', bind_return_key=True), sg.Button('Cancel')]
     ]
 
     window = sg.Window('Enter Ride Data', layout, font=('Arial 10'))
