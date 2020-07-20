@@ -2,7 +2,7 @@
 This is a project for tracking miles ridden on my bike during July 2020 for the Trek Century Challenge on Strava in Python, using matplotlib, numpy, reportlab, and PySimpleGUI. 
 
 ## Motivation
-The Trek Century Challenge is a cycling challenge on the popular exercise tracking app Strava. The challenge runs for the entire month of July and has 3 goals for miles ridden: 100, 500, and 1,000. The best reward (Coffee Mug!) unlocks after only 100 miles. But, as an avid cyclist, I wanted to see how far that I can push myself. Looking back at the last few years that I have been cycling, my 2 biggest months in terms of mileage were 717 and 702. With that being said, I routinely ride over 500 miles per month, so I decided to go all out for the 1,000. Then, I decided that I wanted an easy way to see how I was progressing daily vs my new lofty goal.  
+The Trek Century Challenge is a cycling challenge on the popular exercise tracking app Strava. The challenge runs for the entire month of July and has 3 goals for miles ridden: 100, 500, and 1,000. The best reward (Coffee Mug!) unlocks after only 100 miles. But, as an avid cyclist, I wanted to see how far I can push myself. Looking back at the last few years that I have been cycling, my 2 biggest months in terms of mileage were 717 and 702. With that being said, I routinely ride over 500 miles per month, so I decided to go all out for the 1,000. Then, I decided that I wanted an easy way to see how I was progressing daily vs my new lofty goal.  
 
 There were 3 things that I wanted to create:
 1. Bar chart to visualize miles ridden per day  
@@ -15,7 +15,7 @@ Then, I heard episode 13 of The Real Python Podcast, which introduced me to PySi
 
 ## Examples
 <p align='center'>
-    <img src='https://github.com/dcribb19/trek_century_challenge/blob/master/examples/report.png'>
+    <img width=500 height=649 src='https://github.com/dcribb19/trek_century_challenge/blob/master/examples/report.png'>
 </p>
 
 ## Technology  
