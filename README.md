@@ -33,6 +33,7 @@ Zwift even hosted the Official Virtual Tour de France 2020!
 - numpy 1.19.0
 - PySimpleGUI 4.26.0
 - reportlab 3.5.36
+- ezgmail 0.0.8
 
 ## Usage
 ```python
