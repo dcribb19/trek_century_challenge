@@ -36,7 +36,7 @@ Zwift even hosted the Official Virtual Tour de France 2020!
 
 ## Usage
 ```python
-python daily_report.py
+python ride_gui.py
 ```
 1. GUI will display.  
 <p align='center'>
