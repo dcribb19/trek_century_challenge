@@ -7,7 +7,7 @@ ATTACHMENT_PATH = os.path.join(os.getcwd(), 'reports/')
 
 def send_email():
     '''
-    Email daily_report.pdf until daily until challenge is over.
+    Email daily_report.pdf daily until challenge is over.
     '''
     today = date.today().strftime('%b %d')
     report_suffix = date.today().strftime('%m_%d')
