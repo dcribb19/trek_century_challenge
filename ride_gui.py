@@ -5,6 +5,8 @@ Create a GUI with PySimpleGUI to write information about a single ride to csv.
 import csv
 import PySimpleGUI as sg
 
+import daily_report
+
 
 def show_gui():
     '''
@@ -41,3 +43,12 @@ def show_gui():
                 ride_writer.writerow([date, miles, location])
             break
     window.close()
+
+
+def main():
+    show_gui()
+    daily_report.make_report()
+
+
+if __name__ == '__main__':
+    main()

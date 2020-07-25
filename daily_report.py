@@ -10,14 +10,11 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.utils import ImageReader
 
-from ride_gui import show_gui
-
 
 def make_report():
     '''
     Create .pdf report showing current progress in Trek Century Challenge.
     '''
-    show_gui()
 
     today = date.today()
     report_suffix = today.strftime('%m_%d')
