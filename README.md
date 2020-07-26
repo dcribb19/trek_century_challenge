@@ -13,7 +13,7 @@ I used matplotlib to create the bar chart and line graph. After creating them, I
 
 Then, I heard episode 13 of The Real Python Podcast, which introduced me to PySimpleGUI, which I thought could be a nice way to enter and save ride data. So, I created a GUI that allows me to enter ride info, and upon clicking 'Submit', generates a new report.
 
-Finally, I have added email funtionality with ezgmail, which can be scheduled to run and send reports to keep people informed of my progress.
+Finally, I have added email functionality with ezgmail, which I have scheduled to run every night with Windows Task Scheduler to keep people informed of my progress.
 
 ## Examples
 <p align='center'>
