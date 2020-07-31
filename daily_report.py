@@ -8,7 +8,6 @@ from datetime import date
 
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter
-from reportlab.lib.utils import ImageReader
 
 
 def make_report():
@@ -18,6 +17,7 @@ def make_report():
 
     today = date.today()
     report_suffix = today.strftime('%m_%d')
+    july_mileage.read_csv('rides.csv')
 
     report_path = os.path.join(os.getcwd(), 'reports/')
     report = os.path.join(

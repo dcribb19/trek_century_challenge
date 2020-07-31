@@ -19,16 +19,23 @@ pace = [round(DAILY_GOAL * x, 1) for x in range(1, 32)]
 
 outside = {}
 zwift = {}
-with open('rides.csv', 'r', newline='') as csvfile:
-    ride_reader = csv.reader(csvfile)
-    for row in ride_reader:
-        date_csv = datetime.strptime(row[0], '%Y-%m-%d').date()
-        miles = float(row[1])
-        location = row[2]
-        if location == 'outside':
-            outside[date_csv] = miles
-        else:
-            zwift[date_csv] = miles
+
+
+def read_csv(filename):
+    '''
+    Read csv file to add ride stats to dicts
+    '''
+    with open(filename, 'r', newline='') as csvfile:
+        ride_reader = csv.reader(csvfile)
+        for row in ride_reader:
+            date_csv = datetime.strptime(row[0], '%Y-%m-%d').date()
+            miles = float(row[1])
+            location = row[2]
+            if location == 'outside':
+                outside[date_csv] = miles
+            else:
+                zwift[date_csv] = miles
+    return outside, zwift
 
 
 def format_dates(dates: list) -> list:
@@ -149,8 +156,8 @@ def current_stats() -> str:
                      + str(miles_ridden) + ' miles ridden. ('
                      + str(percentage) + '% complete)\n')
 
-    if days_left.days < 0:
-        current_stats += 'Month is over. Good effort!'
+    if days_left.days == 0:
+        current_stats += 'Month is over. Good effort!\n'
     else:
         current_stats += (str(days_left.days) + ' days left. '
                           + str(remaining) + ' miles remaining. ('
