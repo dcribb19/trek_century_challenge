@@ -156,6 +156,9 @@ def current_stats() -> str:
                      + str(miles_ridden) + ' miles ridden. ('
                      + str(percentage) + '% complete)\n')
 
+    if miles_ridden > GOAL:
+        current_stats += 'Challenge Completed!\n'
+
     if days_left.days == 0:
         current_stats += 'Month is over. Good effort!\n'
     else:
@@ -163,10 +166,7 @@ def current_stats() -> str:
                           + str(remaining) + ' miles remaining. ('
                           + str(round(remaining / days_left.days, 1))
                           + ' mi/day)\n')
-    if miles_ridden > GOAL:
-        current_stats += 'Challenge Completed! ' + str(miles_ridden)
-        current_stats += ' miles ridden.'
-    elif miles_ridden > pace:
+    if miles_ridden > pace:
         current_stats += str(round(miles_ridden - pace, 1))
         current_stats += ' miles ahead of schedule.'
     else:
