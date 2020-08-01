@@ -17,7 +17,11 @@ Finally, I have added email functionality with ezgmail, which I have scheduled t
 
 ## Examples
 <p align='center'>
-    <img width=600 height=779 src='https://github.com/dcribb19/trek_century_challenge/blob/master/examples/report.png'>
+    <img width=400 height=519 src=https://github.com/dcribb19/trek_century_challenge/blob/master/examples/report.png> <img src=https://github.com/dcribb19/trek_century_challenge/blob/master/examples/report_7_25.png width=400 height=513>
+</p>
+
+<p align='center'>
+    <img width=400 height=513 src=https://github.com/dcribb19/trek_century_challenge/blob/master/examples/report_7_31.png>
 </p>
 
 ### What is Zwift?
