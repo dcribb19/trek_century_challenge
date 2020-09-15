@@ -1,3 +1,10 @@
+# gmail.py
+'''
+Create a function that can be used with Windows Task
+Scheduler in order to email daily_report.pdf nightly until
+the challenge is over.
+'''
+
 from datetime import date
 import ezgmail
 import os
@@ -12,11 +19,11 @@ def send_email():
     today = date.today().strftime('%b %d')
     report_suffix = date.today().strftime('%m_%d')
 
-    ezgmail.send('ENTER EMAIL ADDRESS HERE',
-                 'TCC Daily Report ' + today,
+    ezgmail.send('daniel.cribb.10@gmail.com',
+                 f'TCC Daily Report {today}',
                  'Here\'s your report for today, boss.',
-                 ATTACHMENT_PATH + 'daily_report_' + report_suffix + '.pdf',
-                 cc='CC FRIENDS HERE')
+                 f'{ATTACHMENT_PATH}daily_report_{report_suffix}.pdf',
+                 cc='daniel.cribb.10@cnu.edu')
 
 
 def main():

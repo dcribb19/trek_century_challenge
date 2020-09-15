@@ -21,11 +21,11 @@ def make_report():
 
     report_path = os.path.join(os.getcwd(), 'reports/')
     report = os.path.join(
-        report_path, 'daily_report_' + report_suffix + '.pdf'
+        report_path, f'daily_report_{report_suffix}.pdf'
     )
 
     myCanvas = canvas.Canvas(report, pagesize=letter)
-    myCanvas.setTitle('Daily Report_' + report_suffix)
+    myCanvas.setTitle(f'Daily Report_{report_suffix}')
     myCanvas.setAuthor('Daniel Cribb')
     myCanvas.setSubject('Trek Century Challenge 2020')
 
@@ -43,8 +43,8 @@ def make_report():
     july_mileage.pace_stats()
 
     graph_path = os.path.join(os.getcwd(), 'graphs/')
-    bar = os.path.join(graph_path, 'bar_stats_' + report_suffix + '.jpg')
-    pace = os.path.join(graph_path, 'pace_stats_' + report_suffix + '.jpg')
+    bar = os.path.join(graph_path, f'bar_stats_{report_suffix}.jpg')
+    pace = os.path.join(graph_path, f'pace_stats_{report_suffix}.jpg')
 
     # 1920 x 1440 = 1.33 Aspect Ratio
     myCanvas.drawImage(bar, x=100, y=351, width=400, height=301)

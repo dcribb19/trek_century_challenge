@@ -79,7 +79,7 @@ def bar_stats():
 
     # Plot horizontal line representing daily pace needed.
     plt.axhline(DAILY_GOAL, linestyle='--', label='Goal Pace', color='k')
-    # TODO: Fix xticks to show label on image.
+
     plt.title('Daily Miles Ridden - July 2020')
     # plt.xlabel('Date')
     plt.xticks(rotation=45)
@@ -95,7 +95,7 @@ def bar_stats():
     plt.yticks(np.arange(0, 91, 10))
     plt.legend()
     # Save image in graph folder
-    bar_path = os.path.join(graph_path, 'bar_stats_' + REPORT_SUFFIX + '.jpg')
+    bar_path = os.path.join(graph_path, f'bar_stats_{REPORT_SUFFIX}.jpg')
     plt.savefig(bar_path, bbox_inches='tight', dpi=300, opimize=True)
 
 
@@ -131,7 +131,7 @@ def pace_stats():
     plt.legend()
     # Save image in graphs folder
     pace_path = os.path.join(
-                    graph_path, 'pace_stats_' + REPORT_SUFFIX + '.jpg'
+                    graph_path, f'pace_stats_{REPORT_SUFFIX}.jpg'
                 )
     plt.savefig(pace_path, bbox_inches='tight', dpi=300, opimize=True)
 
@@ -152,9 +152,9 @@ def current_stats() -> str:
     pace = round((GOAL / 31) * TODAY.day, 1)
     percentage = round((miles_ridden / GOAL) * 100, 1)
 
-    current_stats = ('As of ' + TODAY.strftime('%b %d, %Y') + ' -\n'
-                     + str(miles_ridden) + ' miles ridden. ('
-                     + str(percentage) + '% complete)\n')
+    current_stats = (f'As of {TODAY.strftime("%b %d, %Y")} -\n'
+                     f'{miles_ridden} miles ridden. ({percentage})'
+                     '% complete)\n')
 
     if miles_ridden > GOAL:
         current_stats += 'Challenge Completed!\n'
@@ -162,10 +162,10 @@ def current_stats() -> str:
     if days_left.days == 0:
         current_stats += 'Month is over. Good effort!\n'
     else:
-        current_stats += (str(days_left.days) + ' days left. '
-                          + str(remaining) + ' miles remaining. ('
-                          + str(round(remaining / days_left.days, 1))
-                          + ' mi/day)\n')
+        current_stats += (f'{days_left.days} days left. {remaining}'
+                          ' miles remaining. ('
+                          f'{round(remaining / days_left.days, 1)}'
+                          ' mi/day)\n')
     if miles_ridden > pace:
         current_stats += str(round(miles_ridden - pace, 1))
         current_stats += ' miles ahead of schedule.'
